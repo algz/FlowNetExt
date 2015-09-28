@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00880B4C-2F7F-466D-927F-5163ADD3C687}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlowNetExt</RootNamespace>
+    <AssemblyName>FlowNetExt</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FlowChart.NET">
+      <HintPath>..\FlowSmart\refDll\FlowChart.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MyControls2008, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MyControls2008.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common.cs" />
+    <Compile Include="Elements\ArrowElement.cs" />
+    <Compile Include="Elements\Component\Atr2\Element41.cs" />
+    <Compile Include="Elements\Component\Atr2\Element42.cs" />
+    <Compile Include="Elements\Component\Atr2\Element43.cs" />
+    <Compile Include="Elements\Component\Atr2\Element44.cs" />
+    <Compile Include="Elements\Component\Atr2\Element45.cs" />
+    <Compile Include="Elements\Component\Pinfin\Element90.cs" />
+    <Compile Include="Elements\Component\Valve\Element96.cs" />
+    <Compile Include="Elements\General\ConnectorElement.cs" />
+    <Compile Include="Elements\General\EndElement.cs" />
+    <Compile Include="Elements\General\StartElement.cs" />
+    <Compile Include="Elements\GlobalParam.cs" />
+    <Compile Include="Elements\Component\Heat\Element62.cs" />
+    <Compile Include="Elements\Component\Heat\Element64.cs" />
+    <Compile Include="Elements\Component\Heat\Element66.cs" />
+    <Compile Include="Elements\Component\Hole3\Element21.cs" />
+    <Compile Include="Elements\Component\Hole\Element22.cs" />
+    <Compile Include="Elements\Component\Hole\Element23.cs" />
+    <Compile Include="Elements\Component\Holfm1\Element24.cs" />
+    <Compile Include="Elements\Component\Holfm1\Element25.cs" />
+    <Compile Include="Elements\Component\Holfm1\Element26.cs" />
+    <Compile Include="Elements\Component\Holfm1\Element27.cs" />
+    <Compile Include="Elements\Component\Holfm1\Element28.cs" />
+    <Compile Include="Elements\Component\Holfm\Element24.cs" />
+    <Compile Include="Elements\Component\Holfm\Element25.cs" />
+    <Compile Include="Elements\Component\Holfm\Element26.cs" />
+    <Compile Include="Elements\Component\Holfm\Element27.cs" />
+    <Compile Include="Elements\Component\Imple\Element71.cs" />
+    <Compile Include="Elements\Component\Imple\Element72.cs" />
+    <Compile Include="Elements\Component\Imple\Element73.cs" />
+    <Compile Include="Elements\Component\Imple\Element74.cs" />
+    <Compile Include="Elements\Component\Imple\Element75.cs" />
+    <Compile Include="Elements\Component\Impmc\Element76.cs" />
+    <Compile Include="Elements\Component\Impmc\Element79.cs" />
+    <Compile Include="Elements\Component\Imptub\Element81.cs" />
+    <Compile Include="Elements\Component\Imptub\Element82.cs" />
+    <Compile Include="Elements\Component\Imptub\Element83.cs" />
+    <Compile Include="Elements\Component\Imptub\Element84.cs" />
+    <Compile Include="Elements\Component\Imptub\Element85.cs" />
+    <Compile Include="Elements\Component\Pinfin\Element86.cs" />
+    <Compile Include="Elements\Component\Ptlosp2\Element16.cs" />
+    <Compile Include="Elements\Component\Ptlosp2\Element17.cs" />
+    <Compile Include="Elements\Component\Ptlos\Element12.cs" />
+    <Compile Include="Elements\Component\Ptlos\Element13.cs" />
+    <Compile Include="Elements\Component\Ptlos\Element11.cs" />
+    <Compile Include="Elements\Component\Seal\Element31.cs" />
+    <Compile Include="Elements\Component\Seal\Element33.cs" />
+    <Compile Include="Elements\Component\Seal\Element35.cs" />
+    <Compile Include="Elements\Component\Seal\Element32.cs" />
+    <Compile Include="Elements\Component\Seal\Element34.cs" />
+    <Compile Include="Elements\Component\Seal\Element36.cs" />
+    <Compile Include="Elements\Component\Tubep2\Element10.cs" />
+    <Compile Include="Elements\Element.cs" />
+    <Compile Include="Elements\Component\Tube\Element1.cs" />
+    <Compile Include="Elements\Component\Tube\Element4.cs" />
+    <Compile Include="Elements\Component\Tube\Element7.cs" />
+    <Compile Include="Elements\Component\Tube\Element5.cs" />
+    <Compile Include="Elements\Component\Tube\Element8.cs" />
+    <Compile Include="Elements\Component\Sealw\Element40.cs" />
+    <Compile Include="Elements\Component\Vor\Element51.cs" />
+    <Compile Include="Elements\Component\Vor\Element52.cs" />
+    <Compile Include="Elements\Component\Vor\Element53.cs" />
+    <Compile Include="Elements\Component\Vor\Element54.cs" />
+    <Compile Include="MainFormExt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFormExt.Designer.cs">
+      <DependentUpon>MainFormExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertySorter.cs" />
+    <EmbeddedResource Include="MainFormExt.resx">
+      <DependentUpon>MainFormExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <Compile Include="Elements\Component\Ptlos\Element14.cs" />
+    <Compile Include="Elements\Component\Ptlosp2\Element18.cs" />
+    <Compile Include="Elements\Component\Holfm\Element28.cs" />
+    <Compile Include="Elements\Component\Holfm\Element29.cs" />
+    <Compile Include="Elements\Component\Impmc\Element77.cs" />
+    <Compile Include="Elements\Component\Impmc\Element78.cs" />
+    <Compile Include="Elements\Component\Pinfin\Element87.cs" />
+    <Compile Include="Elements\Component\Pinfin\Element88.cs" />
+    <Compile Include="Elements\Component\Pinfin\Element89.cs" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出口1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出口2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\缝1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\缝2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\管1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\管2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加热1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加热2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\节点1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\节点2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\进口1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\进口2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件突扩1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件突扩2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件突缩1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件突缩2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绝对坐标转相对坐标1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绝对坐标转相对坐标2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\孔元件输入流量系数1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\孔元件输入流量系数2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\连接线1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\连接线2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\轮缘封严1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\轮缘封严2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\盘风阻温升1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\盘风阻温升2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\气膜孔元件1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\气膜孔元件2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\腔1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\腔2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\扰流柱1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\扰流柱2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\台阶齿1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\台阶齿2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\斜齿1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\斜齿2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\旋转盘腔1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\旋转盘腔2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片前缘冲击冷却1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片前缘冲击冷却2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片中弦冲击冷却1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片中弦冲击冷却2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片中弦冲击通道1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片中弦冲击通道2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\直齿1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\直齿2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\轴风阻温升1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\轴风阻温升2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\出口.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\缝.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\管.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\加热.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\节点.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\进口.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件突扩.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\局部损失元件突缩.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\绝对坐标转相对坐标.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\孔元件输入流量系数.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\连接线.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\轮缘封严.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\盘风阻温升.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\气膜孔元件.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\腔.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\扰流柱.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\台阶齿.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\斜齿.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\旋转盘腔.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片前缘冲击冷却.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片中弦冲击冷却.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\叶片中弦冲击通道.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\直齿.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\轴风阻温升.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
